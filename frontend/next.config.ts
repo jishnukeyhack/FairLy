@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/FairLy', // Your repo name
+  basePath: '/FairLy',
+  images: {
+    unoptimized: true,
+  },
 };
+
 export default nextConfig;
